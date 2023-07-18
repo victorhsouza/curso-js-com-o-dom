@@ -1,0 +1,1 @@
+Para programar em Javascritp voce so precisara do programa Node JS instalado na maquina e o editor de texto de sua preferencia. No curso utilizaremos o VS code. Caso tenha duvidas confira o video da aula na playlist.

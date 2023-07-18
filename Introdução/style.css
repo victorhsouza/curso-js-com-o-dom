@@ -1,0 +1,19 @@
+.container{
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    background-color: white;
+}
+
+body{
+    background-color: dodgerblue;
+}
+
+input{
+    border-radius: 10px;
+}

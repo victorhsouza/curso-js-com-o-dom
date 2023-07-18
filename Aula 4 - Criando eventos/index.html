@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div{
+            border: 1px solid black;
+            width: 150px;
+            height: 150px;
+            padding: 10px;
+            background-color: blue;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div id="div" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">Interaja</div> -->
+
+    <div id="div">Interaja</div>
+
+ <script>
+    var div = document.querySelector("#div")
+
+    div.addEventListener('click',()=>{
+        div.innerHTML = "Clicou!"
+        div.style.backgroundColor = "red"
+    })
+    div.addEventListener('mouseenter',entrar)
+    div.addEventListener('mouseout',sair)
+
+    function clicar(){
+        div.innerHTML = "Clicou!"
+        div.style.backgroundColor = "red"
+      
+    }
+
+    function entrar(){
+        div.innerHTML = "Entrou!"
+        div.style.backgroundColor = "black"
+      
+    }
+
+    function sair(){
+        div.innerHTML = "Saiu!"
+        div.style.backgroundColor = "blue"
+    }
+  
+ </script>   
+</body>
+</html>

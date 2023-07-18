@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <p id="p"> Paragrafo </p>
+    <p>teste</p>
+    <p>teste</p>
+    <p>teste</p>
+    <p>teste</p>
+
+    <h1 class="titulo">titulo</h1>
+    <h2 class="titulo">titulo</h2>
+    <h3 class="titulo">titulo</h3>
+    <h4 class="titulo">titulo</h4>
+
+    <label for="">Masculino</label>
+    <input type="radio" name="sexo" id="">
+    <label for="">Feminino</label>
+    <input type="radio" name="sexo" id="">
+
+<script>
+    // var p = document.getElementById('p')
+    // var titulo = document.getElementsByClassName('titulo')
+    var sexo = document.getElementsByName('sexo')
+    var paragrafo = document.getElementsByTagName('p')
+    var titulo2 = document.querySelectorAll('.titulo')
+    var p = document.querySelector('#p')
+    p.innerText = "Estamos entendendo as formas de recuperar as tags"
+
+    titulo2[0].style.color = "red"
+
+    // paragrafo[1].innerText = "Mudando conteudo novamente"
+
+
+    sexo[1].setAttribute('checked','checked')
+    // titulo[4].innerHTML = "TEste"
+    // p.innerText = "Mudando texto com JS"
+
+</script>    
+</body>
+</html>

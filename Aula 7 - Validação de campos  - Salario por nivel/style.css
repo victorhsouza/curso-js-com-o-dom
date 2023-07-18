@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte-principal);
+}
+body{
+    background-color: var(--cor-escura);
+}
+
+:root{
+    --fonte-principal: 'Oswald', sans-serif;
+    --cor-escura: #090580;
+    --cor-botao: #090580dd;
+    --cor-clara: #a8a7bb;
+}
+
+header{
+    color: white;
+}
+
+header, label{
+    text-align: center;
+    
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1rem;
+    border: 1px solid black;
+    padding-left: 1rem;
+    width: 600px;
+    min-width: 350px;
+    height: 600px;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 5px black;
+}
+
+section.principal{
+    display: flex;
+    width: 550px;
+    /* height: 500px; */
+    justify-content: space-between;
+    padding: 1rem;
+    
+
+}
+
+.input{
+    text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+
+.input-valor{
+     box-shadow: 1px 1px 5px black;
+}
+
+
+input{
+    width: 90%;
+    border-radius: 1rem;
+    padding: 0.3rem;
+    border: 1px solid rgba(0, 0, 0, 0.226);
+    /* box-shadow: 1px 1px 5px black; */
+    text-align: center;
+    outline: none;
+    font-size: 1rem;
+   
+}
+
+.input-3 p{
+    font-size: 1.2rem;
+}
+
+
+.botao-resultado{
+    text-align: center;
+   margin: auto;
+}
+
+button{
+    padding: 1rem 8rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    border: none;
+    background-color: var(--cor-botao);
+    color: white;
+    font-size: 1rem;
+    box-shadow: 2px 2px 2px black;
+   
+}
+button:hover{
+   
+    box-shadow: 1px 2px 2px black;
+}
+
+button:active{
+    box-shadow: inset -2px 2px 3px black;
+}
+
+p{
+    text-align: justify;
+}
+
+.notas, .resultado{
+  
+    height: 350px;
+}
+
+.notas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.resultado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
